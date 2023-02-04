@@ -6,11 +6,11 @@ const MovieCard = ({ movie }) => {
     const detailUrl = `/movie/${movie.id}`
 
     return (
-        <div className="col-lg-3 col-md-3 col-2 my-4">
+        <div className="col-12 col-lg-4 col-md-6 col-2 my-4">
             <div
                 className="card"
                 style={{ width: '18rem' }}>
-                <img src={posterUrl} class="card-img-top" alt={movie.original_title} />
+                <img src={posterUrl} className="card-img-top" alt={movie.original_title} />
                 <div className="card-body">
                     <h5 className="card-title">{movie.original_title}</h5>
                     <p className="card-text">{movie.overview}</p>
